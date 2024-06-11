@@ -34,13 +34,10 @@ public class Solution {
         if (head == null || head.next == null) {
             return false;
         }
-
         // create set for containing visited nodes
         Set<ListNode> visited = new HashSet<>();
-
         // create a ListNode
         ListNode current = head;
-
         // traverse linkedlist
         while (current != null) {
             if (!visited.contains(current)) {
@@ -52,7 +49,6 @@ public class Solution {
                 return true;
             }
         }
-
         return false;
     }
 }
