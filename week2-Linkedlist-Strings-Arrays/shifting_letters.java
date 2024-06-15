@@ -64,4 +64,22 @@ class Solution {
         }
         return new String(arr);
     }
+
+    // what we did in session 2
+    public String shiftingLettersInSession2(String s, int[] shifts) {
+        StringBuilder res = new StringBuilder();
+        int shift = 0;
+
+        // loop in reverse order
+        for (int i = s.length() - 1; i >= 0; i--) {
+            shift += shifts[i];
+            shift = shift % 26;
+            // shift
+            int stepsFromA = (s.charAt(i) - 'a' + shift) % 26;
+            char toAddChar = (char) (stepsFromA + 'a');
+            res.insert(0, toAddChar);
+        }
+
+        return res.toString();
+    }
 }
