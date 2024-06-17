@@ -1,4 +1,6 @@
-class Solution {
+package week2_linkedlist_strings_arrays;
+
+public class ShiftingLetters {
     // Initial solution - very slow
     // N = s.length() = shifts.length
     // Time:  O(N) + O(M^2)

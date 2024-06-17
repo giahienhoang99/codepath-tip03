@@ -1,0 +1,59 @@
+# IDE directories and files
+.idea/
+.vscode/
+*.iml
+
+# Compiled source
+*.class
+*.war
+*.ear
+
+# Build directories
+/bin/
+/build/
+/target/
+/out/
+
+# Dependency directories
+/node_modules/
+/vendor/
+
+# Log files
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Environment variables
+.env
+
+# Maven target directory
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+
+# Gradle files
+.gradle
+build/
+
+# IntelliJ IDEA files
+*.iws
+*.idea/
+*.iml
+*.ipr
+
+# NetBeans files
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/

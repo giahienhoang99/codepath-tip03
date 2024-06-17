@@ -1,4 +1,8 @@
-class Solution {
+package week1_recursion_memoization;
+
+import java.util.Stack;
+
+public class DecodeString {
     public String decodeString(String s) {
         Stack<Integer> numStack = new Stack<>();
         Stack<String> strStack = new Stack<>();

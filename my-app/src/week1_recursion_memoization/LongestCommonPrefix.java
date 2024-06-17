@@ -1,4 +1,8 @@
-class Solution {
+package week1_recursion_memoization;
+
+import java.util.Arrays;
+
+public class LongestCommonPrefix {
     public String longestCommonPrefix(String[] strs) {
         StringBuilder result = new StringBuilder();
         Arrays.sort(strs);
@@ -12,3 +16,4 @@ class Solution {
         return result.toString();
     }
 }
+

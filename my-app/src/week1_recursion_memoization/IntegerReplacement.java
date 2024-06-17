@@ -1,4 +1,6 @@
-class Solution {
+package week1_recursion_memoization;
+
+public class IntegerReplacement {
     public int integerReplacement(int n) {
         // base case
         if (n == 1) {
@@ -14,3 +16,4 @@ class Solution {
         return Math.min(integerReplacement(n-1) + 1, integerReplacement(n+1) + 1);
     }
 }
+

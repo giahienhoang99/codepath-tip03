@@ -1,4 +1,9 @@
-class Solution {
+package week2_linkedlist_strings_arrays;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class SetMatrixZeroes {
     private void setRowZero(int[][] matrix, int row) {
         for (int i = 0; i < matrix[row].length; i++) {
             matrix[row][i] = 0;

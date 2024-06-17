@@ -1,15 +1,9 @@
-/**
- * Definition for singly-linked list.
- * class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) {
- *         val = x;
- *         next = null;
- *     }
- * }
- */
-public class Solution {
+package week2_linkedlist_strings_arrays;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class LinkedListCycle {
     public boolean hasCycle(ListNode head) {
         if (head == null || head.next == null) {
             return false;

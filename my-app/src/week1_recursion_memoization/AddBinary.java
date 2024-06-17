@@ -1,4 +1,6 @@
-class Solution {
+package week1_recursion_memoization;
+
+public class AddBinary {
     public String addBinary(String a, String b) {
         // Initialize variables
         int i = a.length() - 1;
