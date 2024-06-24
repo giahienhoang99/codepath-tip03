@@ -3,6 +3,43 @@ package week2_linkedlist_strings_arrays;
 import java.util.*;
 
 public class GroupAnagrams {
+    // Time:  O(N*MLogM)
+    //        O(N*MLogM) = time for sorting N strings
+    //             MLogM = time for sorting a string
+    //                 M = avg. length of each string
+    //        O(N) = inserting each string into hashmap = O(1) * N strings
+    //        O(N) = constructing result list from hashmap
+    // Space: O(N*M)
+    //        O(N*M) = space of HashMap = N strings * M
+    //             M = avg. length of each string
+    //        O(N*M) = space of result list constructed from hashmap
+    public static List<List<String>> groupAnagramsOptimized(String[] strs) {
+        Map<String, List<String>> map = new HashMap<>();
+
+        for(String word : strs){
+            char[] chars = word.toCharArray();
+            Arrays.sort(chars);
+            String sortedWord = new String(chars);
+
+            if(!map.containsKey(sortedWord)){
+                map.put(sortedWord , new ArrayList<>());
+            }
+
+            map.get(sortedWord).add(word);
+        }
+
+        return new ArrayList<>(map.values());
+    }
+
+    // Time:  O(N*MLogM)
+    // Explanation:
+    //        O(N*MLogM) = time for sorting N strings
+    //        O(N) = inserting each string into hashmap = O(1) * N strings
+    //        O(N*M) = constructing result list from hashmap
+    // Space: O(N*M)
+    // Explanation:
+    //        O(N*M) = space of HashMap
+    //        O(N*M) = space of result list constructed from hashmap
     public static List<List<String>> groupAnagrams(String[] strs) {
         // 1: make a String[] list where list[i] = strs[i] w/ chars sorted
         // 2: create a map<string,list<int>>: keys = list[i], vals = list of i
