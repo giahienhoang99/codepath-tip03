@@ -1,4 +1,4 @@
-package week6_graphs;
+package OAs;
 import java.util.Arrays;
 
 public class JobExecution {
