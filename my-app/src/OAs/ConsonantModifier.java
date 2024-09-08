@@ -3,6 +3,7 @@ package OAs;
 import java.util.HashSet;
 import java.util.Set;
 
+// Databricks - Codesignal - 2nd Question - General Coding Framework
 public class ConsonantModifier {
     private static final char[] CONSONANTS = {'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z'};
     private static final Set<Character> VOWELS = new HashSet<>();
